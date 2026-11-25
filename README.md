@@ -2,7 +2,7 @@
 
 Ein Plugin mit Schreibregeln für deutsche Texte, die veröffentlicht oder weitergegeben werden. Es sorgt für österreichisches Deutsch ohne Gedankenstriche, richtet Ton und Form nach Zweck und Zielgruppe und vermeidet die Muster, an denen man maschinell erzeugte Texte erkennt.
 
-Das Plugin enthält einen einzigen Skill im offenen SKILL.md-Format. Als Plugin läuft es in der Claude-App, in Cowork, in Claude Code und in Codex. In ChatGPT wird nur der Skill als ZIP hochgeladen.
+Das Plugin enthält einen einzigen Skill im offenen SKILL.md-Format. Als Plugin läuft es in der Claude-App, in Cowork, in Claude Code, in Codex und in der ChatGPT-Desktop-App. In ChatGPT im Browser wird der Skill als ZIP hochgeladen.
 
 Diese Datei ist für Menschen gedacht. Das Modell lädt nur `SKILL.md` und bei Bedarf die Dateien in `references/`.
 
@@ -11,9 +11,9 @@ Diese Datei ist für Menschen gedacht. Das Modell lädt nur `SKILL.md` und bei B
 | Pfad | Inhalt |
 |---|---|
 | `.claude-plugin/marketplace.json` | Marktplatz für die Claude-App, Cowork und Claude Code |
-| `.agents/plugins/marketplace.json` | Marktplatz für Codex |
+| `.agents/plugins/marketplace.json` | Marktplatz für Codex und die ChatGPT-Desktop-App |
 | `plugins/at-unsloop/.claude-plugin/plugin.json` | Plugin-Manifest für Claude |
-| `plugins/at-unsloop/plugin.json` | Plugin-Manifest im Format „Agent Plugins“ für Codex |
+| `plugins/at-unsloop/plugin.json` | Plugin-Manifest im Format „Agent Plugins“ für Codex und ChatGPT |
 | `plugins/at-unsloop/skills/at-unsloop/` | der Skill selbst |
 | `tests/` | Tests für das Prüfskript |
 
@@ -56,7 +56,7 @@ Wer at-unsloop nur auf einem Rechner in Claude Code nutzen will, installiert es 
 
 Diese Installation bleibt auf dem Rechner und erscheint nicht im Claude-Konto. Ist at-unsloop schon über das Konto installiert, lässt du sie weg, sonst lädt Claude Code den Skill doppelt.
 
-### Codex
+### Codex und ChatGPT-Desktop-App
 
 Den Marktplatz fügst du in der Codex-CLI hinzu:
 
@@ -64,18 +64,24 @@ Den Marktplatz fügst du in der Codex-CLI hinzu:
 codex plugin marketplace add marcomarkl/at-unsloop
 ```
 
-Danach steht at-unsloop im Plugin-Verzeichnis von Codex zur Installation bereit.
+Danach steht at-unsloop im Plugin-Verzeichnis von Codex zur Installation bereit. Die ChatGPT-Desktop-App zeigt den Marktplatz nach einem Neustart als eigene Quelle in ihrem Plugin-Verzeichnis, im Arbeitsmodus und in Codex innerhalb der App. Von dort installierst du das Plugin.
 
-### ChatGPT
+### ChatGPT-Arbeitsbereiche
 
-ChatGPT installiert keine Plugins aus einem Marktplatz. Dort wird nur der Skill aus dem Plugin als ZIP hochgeladen. Nach dem Klonen packst du ihn so:
+In Business, Enterprise und Edu kann ein Admin das Plugin direkt aus dem GitHub-Repository `marcomarkl/at-unsloop` in den Arbeitsbereich importieren und aktuell halten. Die Mitglieder installieren es danach selbst.
+
+### ChatGPT im Browser
+
+Ob sich im Browser Plugins aus einem eigenen Marktplatz installieren lassen, beschreibt OpenAI nicht. Sicher funktioniert der Upload des Skills aus dem Plugin als ZIP. Nach dem Klonen packst du ihn so:
 
 ```bash
 git clone https://github.com/marcomarkl/at-unsloop.git
 cd at-unsloop/plugins/at-unsloop/skills && zip -r at-unsloop.zip at-unsloop -x '*/__pycache__/*'
 ```
 
-Das ZIP lädst du in den Einstellungen von ChatGPT im Bereich für Skills hoch und aktivierst den Skill danach dort. Erst dann greift er. Damit das Prüfskript läuft, muss dort die Code-Ausführung aktiv sein. Ohne sie wirkt der Skill trotzdem, das Modell prüft dann von Hand.
+In ChatGPT öffnest du in der Seitenleiste „Plugins“, dann das „Plugin Directory“ und dort den Reiter „Skills“. Über „Create“ und „Upload from your computer“ lädst du das ZIP hoch. ChatGPT prüft den Skill zuerst, danach ist er in der Regel sofort verfügbar. Zeigt die Oberfläche einen Schalter zum Aktivieren, schaltest du ihn ein.
+
+Skills gibt es laut OpenAI in den Tarifen Business, Enterprise, Healthcare und Edu. In Arbeitsbereichen muss ein Admin das Hochladen von Skills erlauben. Damit das Prüfskript läuft, muss die Code-Ausführung aktiv sein. Ohne sie wirkt der Skill trotzdem, das Modell prüft dann von Hand.
 
 Sind andere Stil-Skills mit eigenen Regeln für deutsche Texte installiert, deaktivierst du sie besser. Sonst greifen zwei Regelwerke auf dieselben Texte, und das Modell muss zwischen ihnen vermitteln.
 
