@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Worum es geht
 
-Dieses Repository ist ein Plugin mit einem einzigen Skill (`at-unsloop`) im offenen SKILL.md-Format. Der Skill enthält Schreibregeln für deutsche Texte, die weitergegeben werden: österreichisches Deutsch, keine Gedankenstriche, Ton und Form nach Zweck und Zielgruppe, keine maschinell wirkenden Muster. Er soll anbieterneutral in Claude Code, der Claude-App, ChatGPT und Codex laufen. Ein Build-Schritt existiert nicht.
+Dieses Repository ist ein Plugin mit einem einzigen Skill (`at-unsloop`) im offenen SKILL.md-Format. Der Skill enthält Schreibregeln für deutsche Texte, die weitergegeben werden: österreichisches Deutsch, keine Gedankenstriche, Ton und Form nach Zweck und Zielgruppe, keine maschinell wirkenden Muster. Er soll anbieterneutral in der Claude-App, in Cowork, in Claude Code, in Codex und in ChatGPT laufen. Ein Build-Schritt existiert nicht.
 
 ## Befehle
 
@@ -25,10 +25,10 @@ Exit-Codes des Skripts: 0 ohne Treffer, 1 mit Treffern, 2 bei Fehlern (fehlende 
 
 ## Aufbau, der sich erst über mehrere Dateien erschließt
 
-Zwei Ökosysteme teilen sich denselben Skill-Ordner, jedes mit eigenem Manifest und eigenem Marktplatz:
+Zwei Ökosysteme teilen sich denselben Skill-Ordner, jedes mit eigenem Manifest und eigenem Marktplatz. ChatGPT installiert keine Plugins aus einem Marktplatz, dort wird nur der Skill-Ordner als ZIP hochgeladen.
 
-- Claude Code: `.claude-plugin/marketplace.json` im Hauptordner und `plugins/at-unsloop/.claude-plugin/plugin.json`.
-- Codex und ChatGPT: `.agents/plugins/marketplace.json` im Hauptordner und `plugins/at-unsloop/plugin.json` im Format „Agent Plugins“ (Schema `https://agent-plugins.org/schemas/1.0.0/plugin.schema.json`, `additionalProperties: false`, erlaubt sind nur `$schema`, `name`, `version`, `description`, `author`, `homepage`, `repository`, `license`, `keywords`, `extensions`).
+- Claude (Claude-App, Cowork und Claude Code): `.claude-plugin/marketplace.json` im Hauptordner und `plugins/at-unsloop/.claude-plugin/plugin.json`. Über das Claude-Konto installiert, gilt das Plugin auf allen Oberflächen. Über `claude plugin install` installiert, bleibt es lokal.
+- Codex: `.agents/plugins/marketplace.json` im Hauptordner und `plugins/at-unsloop/plugin.json` im Format „Agent Plugins“ (Schema `https://agent-plugins.org/schemas/1.0.0/plugin.schema.json`, `additionalProperties: false`, erlaubt sind nur `$schema`, `name`, `version`, `description`, `author`, `homepage`, `repository`, `license`, `keywords`, `extensions`).
 
 Beide Plugin-Manifeste tragen dieselben Angaben. Wer Version oder Beschreibung ändert, ändert beide. Beide finden den Skill über die Konvention `skills/<name>/SKILL.md`, ein `skills`-Feld braucht keines. Die Marktplätze verweisen mit `./plugins/at-unsloop` auf das Plugin. Ein Plugin direkt im Hauptordner (`"source": "./"`) bestätigt keine der beiden Dokumentationen.
 
@@ -66,4 +66,4 @@ Vorgaben für `SKILL.md`:
 
 Änderungen am Verhalten lassen sich nur mit echten Ausgaben belegen. Bisher bewährt hat sich, dem Modell `SKILL.md` und einige typische Aufträge zu geben (Kundenmail, Post ohne Zielgruppe, Teams-Nachricht, Überarbeitung mit Artefakten und Zitat, readme-Abschnitt), mit Opus und Fable. Die Ausgaben laufen dann durch `pruefen.py`.
 
-Das ZIP für den Upload in die Claude-App und ChatGPT im Browser enthält nur den Skill-Ordner, der Befehl steht im README.
+Das ZIP für den Upload in ChatGPT enthält nur den Skill-Ordner, der Befehl steht im README.

@@ -2,7 +2,7 @@
 
 Ein Plugin mit Schreibregeln für deutsche Texte, die veröffentlicht oder weitergegeben werden. Es sorgt für österreichisches Deutsch ohne Gedankenstriche, richtet Ton und Form nach Zweck und Zielgruppe und vermeidet die Muster, an denen man maschinell erzeugte Texte erkennt.
 
-Das Plugin enthält einen einzigen Skill im offenen SKILL.md-Format. Es funktioniert in Claude Code, in Codex und in der ChatGPT-Desktop-App. In der Claude-App und in ChatGPT im Browser wird der Skill als ZIP hochgeladen.
+Das Plugin enthält einen einzigen Skill im offenen SKILL.md-Format. Als Plugin läuft es in der Claude-App, in Cowork, in Claude Code und in Codex. In ChatGPT wird nur der Skill als ZIP hochgeladen.
 
 Diese Datei ist für Menschen gedacht. Das Modell lädt nur `SKILL.md` und bei Bedarf die Dateien in `references/`.
 
@@ -10,10 +10,10 @@ Diese Datei ist für Menschen gedacht. Das Modell lädt nur `SKILL.md` und bei B
 
 | Pfad | Inhalt |
 |---|---|
-| `.claude-plugin/marketplace.json` | Marktplatz für Claude Code |
-| `.agents/plugins/marketplace.json` | Marktplatz für Codex und ChatGPT |
-| `plugins/at-unsloop/.claude-plugin/plugin.json` | Plugin-Manifest für Claude Code |
-| `plugins/at-unsloop/plugin.json` | Plugin-Manifest im Format „Agent Plugins“ für Codex und ChatGPT |
+| `.claude-plugin/marketplace.json` | Marktplatz für die Claude-App, Cowork und Claude Code |
+| `.agents/plugins/marketplace.json` | Marktplatz für Codex |
+| `plugins/at-unsloop/.claude-plugin/plugin.json` | Plugin-Manifest für Claude |
+| `plugins/at-unsloop/plugin.json` | Plugin-Manifest im Format „Agent Plugins“ für Codex |
 | `plugins/at-unsloop/skills/at-unsloop/` | der Skill selbst |
 | `tests/` | Tests für das Prüfskript |
 
@@ -29,9 +29,19 @@ Im Skill-Ordner liegen:
 
 ## Installation
 
-### Claude Code
+### Claude-App, Cowork und Claude Code (empfohlen)
 
-In einer Claude-Code-Sitzung genügt eine Zeile:
+Über dein Claude-Konto steht das Plugin überall zur Verfügung, im Chat, in Cowork und in Claude Code:
+
+1. In der Claude-App das Menü „Customize“ öffnen und den Reiter „Plugins“ wählen.
+2. Im Bereich „Personal plugins“ auf „+“ klicken und „Add marketplace“ wählen.
+3. `marcomarkl/at-unsloop` eingeben und das Plugin at-unsloop installieren.
+
+Claude Code holt Plugins aus dem Konto beim Start einer Sitzung, solange es mit demselben Konto angemeldet ist.
+
+### Nur Claude Code, ohne Konto
+
+Wer at-unsloop nur auf einem Rechner in Claude Code nutzen will, installiert es dort direkt. In einer Claude-Code-Sitzung genügt eine Zeile:
 
 ```
 /plugin install at-unsloop --marketplace marcomarkl/at-unsloop
@@ -44,7 +54,9 @@ In einer Claude-Code-Sitzung genügt eine Zeile:
 /plugin install at-unsloop@at-unsloop
 ```
 
-### Codex und ChatGPT-Desktop-App
+Diese Installation bleibt auf dem Rechner und erscheint nicht im Claude-Konto. Ist at-unsloop schon über das Konto installiert, lässt du sie weg, sonst lädt Claude Code den Skill doppelt.
+
+### Codex
 
 Den Marktplatz fügst du in der Codex-CLI hinzu:
 
@@ -52,20 +64,20 @@ Den Marktplatz fügst du in der Codex-CLI hinzu:
 codex plugin marketplace add marcomarkl/at-unsloop
 ```
 
-Danach steht at-unsloop im Plugin-Verzeichnis von Codex und der ChatGPT-Desktop-App zur Installation bereit. Wie dieses Verzeichnis aussieht und in welchen Tarifen Plugins verfügbar sind, beschreibt die Dokumentation von OpenAI.
+Danach steht at-unsloop im Plugin-Verzeichnis von Codex zur Installation bereit.
 
-### Claude-App und ChatGPT im Browser
+### ChatGPT
 
-Dort wird nur der Skill als ZIP hochgeladen. Nach dem Klonen packst du ihn so:
+ChatGPT installiert keine Plugins aus einem Marktplatz. Dort wird nur der Skill aus dem Plugin als ZIP hochgeladen. Nach dem Klonen packst du ihn so:
 
 ```bash
 git clone https://github.com/marcomarkl/at-unsloop.git
 cd at-unsloop/plugins/at-unsloop/skills && zip -r at-unsloop.zip at-unsloop -x '*/__pycache__/*'
 ```
 
-Das ZIP lädst du in den Einstellungen der jeweiligen App im Bereich für Skills hoch. Damit das Prüfskript läuft, muss dort die Code-Ausführung aktiv sein. Ohne sie wirkt der Skill trotzdem, das Modell prüft dann von Hand.
+Das ZIP lädst du in den Einstellungen von ChatGPT im Bereich für Skills hoch und aktivierst den Skill danach dort. Erst dann greift er. Damit das Prüfskript läuft, muss dort die Code-Ausführung aktiv sein. Ohne sie wirkt der Skill trotzdem, das Modell prüft dann von Hand.
 
-Sind andere Stil-Skills mit eigenen Regeln für deutsche Texte installiert, deaktivierst du sie besser. Sonst greifen zwei Regelwerke auf dieselben Texte, und das Modell muss zwischen ihnen vermitteln. Aus demselben Grund installierst du at-unsloop nur auf einem Weg je App.
+Sind andere Stil-Skills mit eigenen Regeln für deutsche Texte installiert, deaktivierst du sie besser. Sonst greifen zwei Regelwerke auf dieselben Texte, und das Modell muss zwischen ihnen vermitteln.
 
 ## Prüfskript
 
