@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "at-unsloop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Schreibregeln für deutsche Texte ohne Maschinenklang: österreichisches Deutsch, keine Gedankenstriche, Ton und Form nach Zweck und Zielgruppe.",
   "author": {
     "name": "Marco Markl"

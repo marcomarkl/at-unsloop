@@ -22,6 +22,7 @@ Im Skill-Ordner liegen:
 | Datei | Inhalt |
 |---|---|
 | `SKILL.md` | Kernregeln, werden bei jedem Auslösen geladen |
+| `references/ueberarbeiten.md` | Ablauf beim Überarbeiten vorhandener Texte |
 | `references/beispiele.md` | Vorher-Nachher-Paare für Überarbeitungen |
 | `references/oesterreichisch.md` | Wortliste, Grammatik und Ausnahmen, zugleich Datenquelle des Prüfskripts |
 | `references/artefakte.md` | Reste fremder Chatbots, die beim Überarbeiten entfernt werden |

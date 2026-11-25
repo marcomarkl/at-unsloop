@@ -59,7 +59,7 @@ Die Tests laden `pruefen.py` über `importlib` und tragen das Modul vor dem Ausf
 Vorgaben für `SKILL.md`:
 
 - Das Frontmatter enthält nur `name` und `description`. Die Beschreibung bleibt unter 600 Zeichen und nennt nur Auslöser.
-- Der Text bleibt bei rund 1.800 Wörtern.
+- Der Text bleibt bei rund 1.300 Wörtern. Eine Fassung mit 1.886 Wörtern war im Blindvergleich nicht besser, Details und Abläufe gehören nach `references/`.
 - Er nennt keinen Anbieter oder Modellnamen.
 - Er verweist nicht auf den Skill, aus dem er entstanden ist.
 - Absolut sind nur zwei Regeln, keine erfundenen Fakten und keine Gedankenstriche. Alles andere ist als Tendenz mit Begründung formuliert.

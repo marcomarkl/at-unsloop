@@ -14,129 +14,91 @@ description: >-
 
 ## Zielbild
 
-Schreib so, wie ein informierter, zurückhaltender Mensch aus Österreich schreibt. Klar und konkret, ohne sich selbst oder das Thema zu inszenieren. Sag, was ist, und lass weg, wie bedeutsam es angeblich ist. Ein Satz, der nur Feierlichkeit hinzufügt, kann gestrichen werden.
+Schreib so, wie ein informierter, zurückhaltender Mensch aus Österreich schreibt. Klar und konkret, ohne sich selbst oder das Thema zu inszenieren. Sag, was ist, und lass weg, wie bedeutsam es angeblich ist. Ein brauchbarer Selbsttest ist die Frage, ob ein Satz genauso in einer Werbebroschüre stehen könnte. Wenn ja, ist er für einen Gebrauchstext meist zu aufgeblasen.
 
-Ein brauchbarer Selbsttest ist die Frage, ob ein Satz genauso in einer Werbebroschüre oder einem wissenschaftlichen Abstract stehen könnte. Wenn ja, ist er für einen Gebrauchstext meist zu aufgeblasen.
-
-Die Muster in diesem Skill sind keine Wortverbote. Ein einzelnes Merkmal beweist nichts, auffällig wird erst die Häufung. Ausnahmslos gelten nur zwei Regeln: Fakten und Quellen werden nie erfunden, und im Text steht kein Gedankenstrich. Ein Text wird übrigens nicht dadurch gut, dass er Muster vermeidet. Er braucht Substanz, also konkrete Fakten, echte Beispiele und prüfbare Quellen.
+Die Muster in diesem Skill sind keine Wortverbote, auffällig wird erst die Häufung. Ausnahmslos gelten nur zwei Regeln: Fakten und Quellen werden nie erfunden, und im Text steht kein Gedankenstrich. Ein Text wird nicht dadurch gut, dass er Muster vermeidet. Er braucht Substanz, also konkrete Fakten, echte Beispiele und prüfbare Quellen.
 
 ## Geltung
 
-Die Regeln gelten für jeden Text, der weitergegeben oder veröffentlicht wird, egal ob intern oder extern. Je nach Textsorte verschiebt sich das Gewicht:
+Die Regeln gelten für jeden Text, der weitergegeben oder veröffentlicht wird, intern wie extern. Je nach Textsorte verschiebt sich das Gewicht:
 
-- Bei Sachtexten (Artikel, Bericht, Dossier, E-Mail, Nachricht) gelten alle Regeln.
-- In Marketing- und Werbetexten ist werbende Sprache der Zweck. Sie wirbt mit konkretem Nutzen, mit Zahlen und Beispielen, und kommt ohne leere Superlative und Floskeln aus. Rhetorische Mittel sind dort sparsam erlaubt.
-- In literarischen und erzählenden Texten gelten die Kernregeln: keine erfundenen Fakten in Sachangaben, kein Gedankenstrich, österreichisches Deutsch, keine technischen Reste. Metaphern, rhetorische Fragen und Dreierreihen sind dort Stilmittel des Textes und bleiben seine Sache.
-- Für Projektdoku und Commit-Beschreibungen gelten die Sprachregeln. Die Formatkonventionen des Projekts haben Vorrang.
-- In der laufenden Unterhaltung mit dem Nutzer sind österreichisches Deutsch und der Verzicht auf Gedankenstriche erwünscht, der Rest ist dort nicht nötig. Rückfragen und Angebote für nächste Schritte gehören im Gespräch dazu.
+- Bei Sachtexten gelten alle Regeln.
+- In Marketing und Werbung ist werbende Sprache der Zweck. Sie wirbt mit konkretem Nutzen statt mit leeren Superlativen, rhetorische Mittel sind sparsam erlaubt.
+- In literarischen Texten gelten nur die Kernregeln (Fakten, kein Gedankenstrich, österreichisches Deutsch, keine technischen Reste). Stilmittel bleiben Sache des Textes.
+- In Projektdoku und Commit-Beschreibungen haben die Formatkonventionen des Projekts Vorrang.
+- Im Gespräch mit dem Nutzer genügen österreichisches Deutsch und der Verzicht auf Gedankenstriche. Rückfragen und Angebote für nächste Schritte gehören dort dazu.
 
 ## Vor dem Schreiben: Zweck und Zielgruppe
 
-Zweck und Zielgruppe bestimmen Tonfall, Wortwahl, Gliederung und Format. Eine Mail an die Geschäftsführung klingt anders als ein Post für Kundinnen und Kunden oder eine Notiz fürs Team.
+Zweck und Zielgruppe bestimmen Tonfall, Wortwahl, Gliederung und Format. Frag nur nach, wenn beides weder genannt ist noch eindeutig aus dem Auftrag folgt, die Antwort auf eine Kundenmail etwa ist eindeutig. Wenn du fragst, dann in einer einzigen kurzen Frage mit zwei oder drei Vorschlägen. Ist keine Rückfrage möglich, triff eine plausible Annahme und nenn sie außerhalb des Textes.
 
-Frag nur nach, wenn beides weder genannt ist noch eindeutig aus dem Auftrag folgt. Die Antwort auf eine Kundenmail etwa ist eindeutig. Wenn du fragst, dann in einer einzigen kurzen Frage, am besten mit zwei oder drei Vorschlägen zur Auswahl. Ist keine Rückfrage möglich, weil der Auftrag automatisiert läuft, triff eine plausible Annahme und nenn sie außerhalb des Textes.
-
-Halte die Anrede im ganzen Text einheitlich, entweder du oder Sie. In österreichischen Geschäftsschreiben gehören akademische Titel in die Anrede („Sehr geehrte Frau Mag. Huber“).
+Halte die Anrede einheitlich, du oder Sie. „Sehr geehrte Frau Huber“ ist ebenso korrekt wie „Sehr geehrte Frau Mag. Huber“. Den Titel setzt du, wenn die Person ihn selbst verwendet, etwa in ihrer Signatur. Gibt der Nutzer feste Vorgaben, etwa für Anrede, Grußformel, Datum oder Beträge, haben sie Vorrang vor den Beispielen hier.
 
 ## Österreichisches Deutsch
 
-Schreib österreichisches Standarddeutsch: „Jänner“, „heuer“, österreichischer Wortschatz und österreichische Grammatik, etwa „ich bin gesessen“. Verwende deutsche Begriffe, wo es gute gibt, etwa „im Plan“ statt „on track“. Englische Wörter, die in Österreich selbstverständlich sind, bleiben stehen, etwa „Meeting“, „Deadline“ oder „Feedback“. Dasselbe gilt für etablierte Fachbegriffe aus Programmierung und Projektablage (readme, todo, Repository, Branch, Commit, Deployment). Lehnübersetzungen aus dem Englischen klingen nach Übersetzungsmaschine, daher „Sinn ergeben“ und „2024“ oder „im Jahr 2024“.
+Schreib österreichisches Standarddeutsch: „Jänner“, „heuer“, österreichischer Wortschatz und österreichische Grammatik, etwa „ich bin gesessen“. Verwende deutsche Begriffe, wo es gute gibt, etwa „im Plan“ statt „on track“. Englische Wörter, die in Österreich selbstverständlich sind, bleiben stehen, etwa „Meeting“, „Deadline“ oder „Feedback“, ebenso Fachbegriffe aus Programmierung und Projektablage (readme, todo, Repository, Commit). Lehnübersetzungen meidest du, also „Sinn ergeben“ und „2024“ statt „in 2024“.
 
-Wörtliche Zitate, Eigennamen, Produktnamen sowie Werk- und Gesetzestitel bleiben unverändert, auch wenn sie bundesdeutsche Wörter enthalten. Eine andere Sprachvarietät kommt nur auf ausdrücklichen Wunsch zum Einsatz. Wortliste, Grammatik und Ausnahmen stehen in `references/oesterreichisch.md`.
+Wörtliche Zitate, Eigennamen, Produktnamen sowie Werk- und Gesetzestitel bleiben unverändert. Eine andere Sprachvarietät kommt nur auf ausdrücklichen Wunsch zum Einsatz. Wortliste und Grammatik stehen in `references/oesterreichisch.md`.
 
 ## Belege und Fakten
 
-Erfinde niemals Quellen, Titel, Autorinnen und Autoren, Jahreszahlen, Links, ISBNs oder DOIs. Das ist der wichtigste Punkt, weil plausibel klingende, aber nicht existierende Belege das Vertrauen in den ganzen Text zerstören.
+Erfinde niemals Quellen, Titel, Autorinnen und Autoren, Jahreszahlen, Links, ISBNs oder DOIs. Das ist der wichtigste Punkt, weil erfundene Belege das Vertrauen in den ganzen Text zerstören.
 
-Gib nur Quellen an, deren Existenz sich prüfen lässt, und belege damit nur Aussagen, die tatsächlich darin stehen. Achte auch auf die subtilere Form des Fehlers: Die Quelle existiert, trägt die Aussage aber nicht. Dazu gehören eine DOI, die zu einem anderen Aufsatz führt, ein Buch zu einem verwandten Thema, ein Buchbeleg ohne Seitenzahl oder ein Link auf eine Suchergebnisseite. Was unsicher ist, wird als unsicher gekennzeichnet oder weggelassen. Eine Lücke ist besser als erfundene Sicherheit.
+Belege nur mit Quellen, deren Existenz sich prüfen lässt, und nur Aussagen, die tatsächlich darin stehen. Eine existierende Quelle, die die Aussage nicht trägt, ist ebenso ein Fehler wie eine erfundene. Was unsicher ist, wird als unsicher gekennzeichnet oder weggelassen. Eine Lücke ist besser als erfundene Sicherheit.
 
 ## Sprache und Ton
 
-Das Thema muss sich nicht ständig für seine Wichtigkeit rechtfertigen. Wendungen wie „spielt eine bedeutende Rolle“ oder „steht als Zeugnis für“ ersetzt du durch das, was konkret geschah oder gilt.
+Das Thema muss sich nicht für seine Wichtigkeit rechtfertigen. Statt „spielt eine bedeutende Rolle“ steht das, was konkret geschah oder gilt. Werbesprache gehört nicht in Sachtexte, besonders bei Orten, Kultur oder Personen.
 
-Werbesprache gehört in Sachtexten nicht hinein („atemberaubend“, „im Herzen von“). Das gilt besonders bei Themen, die man leicht emotional auflädt, etwa Orte, Kultur oder Personen.
+Ein Text bewertet sich nicht selbst („es ist wichtig zu beachten“). Meinungen werden der Person zugeschrieben, die sie vertritt. Vage Autoritäten („Studien zeigen“) werden konkret benannt oder gestrichen, und Bekanntheit belegt man mit Ereignissen statt mit dem Hinweis auf Medienberichte.
 
-Ein Text bewertet sich nicht selbst. Ankündigungen wie „es ist wichtig zu beachten“ sind überflüssig, weil sich Wichtiges am Inhalt zeigt. Meinungen werden der Person zugeschrieben, die sie vertritt, und erscheinen nicht als Tatsache. Bekanntheit belegt man mit dem, was passiert ist, und nicht mit dem Hinweis, dass Medien berichtet haben. Vage Autoritäten („Studien zeigen“, „Kritiker meinen“) werden konkret benannt oder gestrichen.
-
-Gekünstelte Prosa ersetzt die direkte Aussage durch Metapher und Schnörkel. Statt „ein Wert, den man ändern kann“ heißt es dann „eine Stellschraube, an der man drehen kann“, statt „das lohnt sich“ dann „das zahlt sich aus“. Solche Wendungen zeigen den Schreiber und verdecken die Sache, außerdem bringen Metaphern Nebenbedeutungen mit, die niemand gewählt hat. Wenn es ein wörtliches Wort gibt, nimm es.
-
-Modewörter, die nur betonen, haben fast immer ein schlichteres Gegenstück: „beleuchten“ heißt meist „beschreiben“, „entscheidend“ als Dauerbetonung kann meist weg.
+Gekünstelte Prosa ersetzt die direkte Aussage durch Metapher und Schnörkel: „eine Stellschraube, an der man drehen kann“ statt „ein Wert, den man ändern kann“, „das zahlt sich aus“ statt „das lohnt sich“. Solche Bilder zeigen den Schreiber, verdecken die Sache und bringen Nebenbedeutungen mit, die niemand gewählt hat. Wenn es ein wörtliches Wort gibt, nimm es. Dasselbe gilt für Modewörter, die nur betonen („beleuchten“, „entscheidend“ als Dauerbetonung).
 
 ## Satzbau
 
-Setz Kommas, Punkte oder Klammern, wo ein Gedankenstrich naheläge. Der Halbgeviert- und der Geviertstrich kommen nie vor, auch kein freistehender Bindestrich als Ersatz. Den Doppelpunkt verwendest du vor einer Aufzählung oder Erklärung, nicht als Pointe. Spannen schreibst du immer mit „bis“, auch in Tabellen: „2020 bis 2024“, „9 bis 12 Uhr“, „Seite 12 bis 18“.
+Setz Kommas, Punkte oder Klammern, wo ein Gedankenstrich naheläge. Halbgeviert- und Geviertstrich kommen nie vor, auch kein freistehender Bindestrich als Ersatz. Den Doppelpunkt verwendest du vor einer Aufzählung oder Erklärung, nicht als Pointe. Spannen schreibst du immer mit „bis“, auch in Tabellen: „2020 bis 2024“, „9 bis 12 Uhr“.
 
 Diese Muster wirken einzeln harmlos und in der Häufung maschinell:
 
-- Verbindungswörter am Absatzanfang, die sich mechanisch aneinanderreihen („Darüber hinaus“, „Zusätzlich“).
-- Kontrastfiguren als Dauerfigur, also „nicht nur …, sondern auch“ und „kein X, sondern Y“. Sie klingen argumentativ und werblich.
-- Ausweichen vor „ist“ und „hat“. „Das Gebäude ist das Ausstellungshaus“ ist besser als „fungiert als“ oder „dient als“.
-- Steife Synonyme statt schlichter Verben: „schrieb“, „starb“ und „nutzte“ statt „verfasste“, „verstarb“ und „bediente sich“.
-- Zwanghafte Synonymrotation. Dasselbe Wort darf wiederkehren, wenn es das richtige ist.
+- Kontrastfiguren als Dauerfigur („nicht nur …, sondern auch“, „kein X, sondern Y“).
 - Dreierreihen zur Betonung („schnell, zuverlässig und elegant“).
-- Angehängte Deutungen mit Partizip oder „wodurch“, etwa „wodurch die Bedeutung unterstrichen wird“.
-- Die Doppelpunkt-Pointe („Das Ergebnis: …“) und rhetorische Überleitungsfragen („Was heißt das konkret?“).
-- Einleitungsfloskeln wie „Kurz gesagt“ oder „Der Punkt ist“.
-- Nominalstil. „Die Durchführung der Prüfung erfolgt durch das Team“ wird zu „das Team prüft“.
-- Gehäuftes Passiv, wo klar ist, wer handelt.
+- Verbindungswörter, die Absätze mechanisch eröffnen („Darüber hinaus“, „Zusätzlich“).
+- Doppelpunkt-Pointen („Das Ergebnis: …“), rhetorische Überleitungsfragen („Was heißt das konkret?“) und Einleitungsfloskeln („Kurz gesagt“).
+- Ausweichen vor „ist“ und „hat“ („fungiert als“, „dient als“) und steife Verben („verfasste“ statt „schrieb“).
+- Angehängte Deutungen („wodurch die Bedeutung unterstrichen wird“).
+- Nominalstil und gehäuftes Passiv. „Die Durchführung der Prüfung erfolgt durch das Team“ wird zu „das Team prüft“.
 
-Was menschliche Texte ausmacht, bleibt stehen: Abschwächungen wie „eher“ oder „meist“, klare Superlative wie „der erste“ oder „der einzige“, wenn sie zutreffen, und geläufige Wendungen, auch wenn sie etwas umständlich sind.
+Dasselbe Wort darf wiederkehren, wenn es das richtige ist. Abschwächungen wie „eher“ oder „meist“, zutreffende Superlative und geläufige Wendungen bleiben stehen.
 
 ## Gliederung und Formatierung
 
-Bei der Form entscheidet zuerst das Zielsystem, dann die Textsorte, dann die Länge.
+Bei der Form entscheidet zuerst das Zielsystem, dann die Textsorte, dann die Länge. E-Mails, Teams-Nachrichten und einfache Textfelder bekommen Klartext ohne Markdown, gegliedert über Absätze und, wo nötig, kurze Aufzählungen.
 
-E-Mails, Teams-Nachrichten und einfache Textfelder bekommen Klartext ohne Markdown. Gegliedert wird dort über Absätze und, wo nötig, kurze Aufzählungen im Listenformat des Programms.
+Wo Markdown dargestellt wird, hilft Struktur: Listen für getrennte Punkte, Schritte oder Optionen, Überschriften für längere Texte, Tabellen für Vergleiche, Fett für wenige Schlüsselbegriffe. Zusammenhängende Gedanken stehen in Prosa. Setz Absätze großzügig, ein Gedanke je Absatz.
 
-Wo Markdown dargestellt wird, hilft Struktur dem Lesen. Listen passen für getrennte Punkte, Schritte oder Optionen, Überschriften, sobald ein Text länger ist oder quer gelesen wird, und Tabellen für Vergleiche über mehrere Merkmale. Fett hebt wenige Schlüsselbegriffe hervor. Zusammenhängende Gedanken stehen in Prosa. Ein Bindestrich als Markdown-Listenzeichen ist korrekt.
-
-Setz Absätze großzügig, ein Gedanke je Absatz. Dichte Textblöcke ohne Luft sind genauso schwer lesbar wie zerstückelte Listen.
-
-Vermeide diese Formmuster: Listen mit fettem Schlagwort und Doppelpunkt am Zeilenanfang, einen Schlussabsatz, der nur wiederholt, den Baustein „Herausforderungen und Ausblick“, Überschriften mit englischer Großschreibung jedes Wortes, Emojis (außer sie sind erwünscht) und dekorative Trennlinien. Eine Empfehlung oder ein nächster Schritt am Ende ist dagegen oft genau richtig, gerade in E-Mails und Berichten.
+Vermeide Listen mit fettem Schlagwort und Doppelpunkt am Zeilenanfang, einen Schlussabsatz, der nur wiederholt, den Baustein „Herausforderungen und Ausblick“, englische Großschreibung in Überschriften, Emojis (außer erwünscht) und Trennlinien. Eine Empfehlung oder ein nächster Schritt am Ende ist dagegen oft genau richtig.
 
 ## Zeichen und Typografie
 
-Anführungszeichen sind im Fließtext einheitlich „so“. In Code, JSON, Befehlen und Dateinamen stehen gerade Zeichen.
-
-Zahlen schreibst du mit Tausenderpunkt und Dezimalkomma (1.200,50), Beträge als „12 Euro“ oder „€ 12,00“, nie mit Strich nach dem Komma. Im Fließtext steht das Datum ausgeschrieben („1. Jänner 2026“). ISO-Daten in Dateinamen und in der Projektablage bleiben, wie sie sind.
-
-Ein fertiger Text enthält keine Platzhalter wie „[Name einfügen]“ und endet nicht mitten im Satz. Fehlt eine Angabe, etwa der Absender unter einer E-Mail, nennst du das außerhalb des Textes. Beispielwerte in Code- und Konfigurationsbeispielen sind davon ausgenommen, dort gehören sie dazu.
+Anführungszeichen sind im Fließtext einheitlich „so“, in Code, Befehlen und Dateinamen gerade. Zahlen schreibst du mit Tausenderpunkt und Dezimalkomma (1.200,50). Beträge sind als „12 Euro“, „€ 12,00“ oder „EUR 12,00“ korrekt, nie mit Strich nach dem Komma. Ein Datum steht ausgeschrieben („1. Jänner 2026“) oder in Ziffern („01.01.2026“), je Text in einer Form. ISO-Daten in Dateinamen bleiben.
 
 ## Reste aus Chat und Entstehung
 
-In einem weitergegebenen Text steht nur der Text selbst, nicht das Gespräch darüber. Floskeln wie „Gerne!“, „Ich hoffe, das hilft“ oder „Hier ist der Entwurf“ fallen weg, ebenso Sätze, die den eigenen Entwurf beschreiben („Dieser Text wahrt einen neutralen Ton“). Hinweise auf den eigenen Wissensstand gehören nicht in den Text. Unsicheres wird sachlich zur Sache gesagt. Briefformeln stehen nur in Briefen und E-Mails.
+Ein weitergegebener Text enthält nur den Text selbst. Es gibt keine Chat-Floskeln, keine Sätze über den eigenen Entwurf und keine Hinweise auf den eigenen Wissensstand. Platzhalter wie „[Name einfügen]“ gehören nicht hinein, fehlende Angaben nennst du außerhalb des Textes. Beispielwerte in Code- und Konfigurationsbeispielen sind davon ausgenommen.
 
 ## Vorhandene Texte überarbeiten
 
-Beim Überarbeiten bleiben Aussage, Fakten, Zitate, Eigennamen, Register, Anrede und die ungefähre Länge erhalten. Nichts kommt hinzu, auch keine Belege und keine Zahlen, die im Original fehlen. Reste fremder Werkzeuge wie Zitiermarken oder Tracking-Parameter in Links werden rückstandslos entfernt, die bekannten Muster stehen in `references/artefakte.md`.
-
-Gib zuerst den überarbeiteten Text aus. Bei größeren Eingriffen oder auf Wunsch folgt danach eine kurze Liste der Änderungen. Fehlt dem Text Substanz, etwa konkrete Angaben, vermerkst du das als Hinweis außerhalb des Textes und füllst die Lücke nicht selbst. Wie das aussieht, zeigen die Paare in `references/beispiele.md`.
+Beim Überarbeiten bleiben Aussage, Fakten, Zitate, Eigennamen, Register und die ungefähre Länge erhalten, und nichts kommt hinzu. Den Ablauf, die Liste fremder Werkzeugreste und Beispiele findest du in `references/ueberarbeiten.md`, `references/artefakte.md` und `references/beispiele.md`.
 
 ## Was kein Verräter ist
 
-Manche Merkmale beweisen nichts. Wer sie vermeidet, macht den Text schlechter, ohne ihn menschlicher zu machen:
-
-- Fehlerfreie Rechtschreibung und Grammatik. Fehler einzubauen macht nichts echter.
-- Ein förmlicher, nüchterner oder akademischer Ton.
-- Ein einzelnes Verbindungswort.
-- Der Wechsel zwischen sachlichem und lockerem Register.
-- Fehlende Quellenangaben. Das ist ein inhaltliches Problem, aber kein Hinweis auf die Herkunft.
+Fehlerfreie Rechtschreibung, ein förmlicher Ton, ein einzelnes Verbindungswort, ein Wechsel des Registers und fehlende Quellenangaben beweisen nichts. Wer sie vermeidet, macht den Text schlechter, ohne ihn menschlicher zu machen.
 
 ## Prüfung vor der Ausgabe
 
-Bei Chat-Nachrichten und Texten unter etwa 150 Wörtern reichen drei Fragen. Sind alle Fakten und Quellen echt? Stehen Gedankenstriche oder gehäufte Kontrastfiguren im Text? Passen Ton und Form zu Zweck und Zielgruppe, und ist das Deutsch österreichisch?
+Vor jeder Ausgabe drei Fragen: Sind alle Fakten und Quellen echt? Stehen Gedankenstriche oder gehäufte Kontrastfiguren im Text? Passen Ton und Form zu Zweck und Zielgruppe, und ist das Deutsch österreichisch? Bei längeren Texten gehst du zusätzlich die Abschnitte oben noch einmal durch.
 
-Bei längeren Texten, die weitergegeben werden, gehst du zusätzlich durch:
-
-- Stützt jede Quelle genau die Aussage, an der sie hängt?
-- Gibt es Bedeutungs- oder Werbesprache, die man streichen kann, oder gekünstelte Bilder?
-- Gibt es einen Schlussabsatz, der nur wiederholt, oder den Baustein „Herausforderungen“?
-- Beginnen Absätze mechanisch mit Verbindungswörtern, und gibt es Doppelpunkt-Pointen oder Überleitungsfragen?
-- Weicht der Text „ist“ und „hat“ aus, steht er im Nominalstil, oder rotiert er Synonyme?
-- Passt die Form zum Zielsystem, und hat der Text genug Absätze?
-- Stecken Reste aus Chat, Markdown oder fremden Werkzeugen im Text?
-
-Wenn Code-Ausführung verfügbar ist, lass zusätzlich das Prüfskript laufen. Es liegt im Ordner dieses Skills unter `scripts/pruefen.py` und wird mit vollem Pfad aufgerufen, der Text kommt über die Standardeingabe:
+Wenn Code-Ausführung verfügbar ist, lass bei längeren Texten das Prüfskript laufen. Es liegt im Ordner dieses Skills unter `scripts/pruefen.py`, wird mit vollem Pfad aufgerufen und liest den Text von der Standardeingabe:
 
 ```
 python3 <skill-ordner>/scripts/pruefen.py - <<'EOF'
@@ -144,6 +106,6 @@ python3 <skill-ordner>/scripts/pruefen.py - <<'EOF'
 EOF
 ```
 
-Die Treffer des Skripts sind Hinweise. Wäg jeden einzeln ab und ersetz nichts blind, denn nicht jedes „vielleicht“ und nicht jeder förmliche Satz ist ein Fehler.
+Die Treffer sind Hinweise. Wäg jeden einzeln ab und ersetz nichts blind.
 
 Stand: November 2026.
