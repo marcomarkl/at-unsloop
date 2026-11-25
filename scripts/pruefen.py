@@ -471,25 +471,38 @@ def main(argv: list[str] | None = None) -> int:
         if hasattr(strom, "reconfigure"):
             strom.reconfigure(encoding="utf-8")
 
-    parser = argparse.ArgumentParser(description="Prüft deutsche Texte auf maschinell wirkende Muster.")
+    parser = argparse.ArgumentParser(
+        description="Prüft deutsche Texte auf maschinell wirkende Muster.",
+        usage="%(prog)s [Optionen] DATEI [DATEI ...]\n       %(prog)s --regeln [--json]",
+    )
     # nargs="*", damit --regeln ohne Datei funktioniert. Für die Prüfung selbst
     # wird unten mindestens eine Datei verlangt.
-    parser.add_argument("dateien", nargs="*", help="Dateien (Klartext oder Markdown) oder - für die Standardeingabe")
+    parser.add_argument("dateien", nargs="*", metavar="DATEI",
+                        help="Datei (Klartext oder Markdown) oder - für die Standardeingabe")
     parser.add_argument("--json", action="store_true", help="Treffer als JSON ausgeben")
     parser.add_argument("--ignoriere-regel", action="append", default=[], metavar="REGEL",
                         help="Regel überspringen, mehrfach möglich")
     parser.add_argument("--regeln", action="store_true", help="alle Regeln auflisten und beenden")
     parser.add_argument("--wortliste", type=Path, default=STANDARD_WORTLISTE, help=argparse.SUPPRESS)
     parser.add_argument("--artefakte", type=Path, default=STANDARD_ARTEFAKTE, help=argparse.SUPPRESS)
-    args = parser.parse_args(argv)
+    # parse_intermixed_args erlaubt Dateien vor und nach Optionen (a.md --json b.md).
+    args = parser.parse_intermixed_args(argv)
 
     if args.regeln:
-        for name, text in REGELN.items():
-            print(f"{name}: {text}")
+        if args.dateien or args.ignoriere_regel:
+            print("Fehler: --regeln listet nur die Regeln auf und prüft keine Dateien. "
+                  "Für eine Prüfung --regeln weglassen.", file=sys.stderr)
+            return 2
+        if args.json:
+            print(json.dumps(REGELN, ensure_ascii=False, indent=2))
+        else:
+            for name, text in REGELN.items():
+                print(f"{name}: {text}")
         return 0
 
     if not args.dateien:
-        parser.error("mindestens eine Datei oder - für die Standardeingabe angeben")
+        print("Fehler: mindestens eine Datei oder - für die Standardeingabe angeben.", file=sys.stderr)
+        return 2
 
     unbekannt = [r for r in args.ignoriere_regel if r not in REGELN]
     if unbekannt:

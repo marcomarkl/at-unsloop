@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 import subprocess
 import sys
 import tempfile
@@ -193,7 +194,44 @@ class Kommandozeile(unittest.TestCase):
         self.assertIn("gedankenstrich:", ergebnis.stdout.decode("utf-8"))
 
     def test_pruefung_ohne_datei(self):
-        self.assertEqual(self.lauf().returncode, 2)
+        ergebnis = self.lauf()
+        self.assertEqual(ergebnis.returncode, 2)
+        self.assertIn("mindestens eine Datei", ergebnis.stderr.decode("utf-8"))
+
+    def test_main_ohne_datei_gibt_zwei_zurueck(self):
+        self.assertEqual(pruefen.main([]), 2)
+
+    def test_regeln_als_json(self):
+        ergebnis = self.lauf("--regeln", "--json")
+        self.assertEqual(ergebnis.returncode, 0)
+        self.assertIn("gedankenstrich", json.loads(ergebnis.stdout.decode("utf-8")))
+
+    def test_regeln_mit_datei_wird_abgelehnt(self):
+        with tempfile.TemporaryDirectory() as ordner:
+            datei = Path(ordner) / "text.md"
+            datei.write_text(f"Gut {HG} sehr gut.", encoding="utf-8")
+            ergebnis = self.lauf("--regeln", str(datei))
+        self.assertEqual(ergebnis.returncode, 2)
+        self.assertIn("--regeln", ergebnis.stderr.decode("utf-8"))
+
+    def test_regeln_mit_ignoriere_regel_wird_abgelehnt(self):
+        self.assertEqual(self.lauf("--regeln", "--ignoriere-regel", "gibtsnicht").returncode, 2)
+
+    def test_dateien_vor_und_nach_option(self):
+        with tempfile.TemporaryDirectory() as ordner:
+            a = Path(ordner) / "a.md"
+            b = Path(ordner) / "b.md"
+            a.write_text("Ein Satz.", encoding="utf-8")
+            b.write_text("Im Januar.", encoding="utf-8")
+            ergebnis = self.lauf(str(a), "--json", str(b))
+        self.assertEqual(ergebnis.returncode, 1)
+        treffer = json.loads(ergebnis.stdout.decode("utf-8"))
+        self.assertEqual({t["datei"] for t in treffer}, {str(b)})
+
+    def test_hilfe_zeigt_datei_als_pflicht(self):
+        hilfe = self.lauf("-h").stdout.decode("utf-8")
+        self.assertIn("DATEI [DATEI ...]", hilfe)
+        self.assertNotIn("[DATEI ...]]", hilfe)
 
     def test_unbekannte_regel(self):
         self.assertEqual(self.lauf("--ignoriere-regel", "gibtsnicht", "-", eingabe="x").returncode, 2)
