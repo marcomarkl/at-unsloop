@@ -9,7 +9,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
-SKILL = Path(__file__).resolve().parent.parent
+REPO = Path(__file__).resolve().parent.parent
+SKILL = REPO / "plugins" / "at-unsloop" / "skills" / "at-unsloop"
 SKRIPT = SKILL / "scripts" / "pruefen.py"
 
 _spec = importlib.util.spec_from_file_location("pruefen", SKRIPT)

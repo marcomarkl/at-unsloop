@@ -1,0 +1,20 @@
+{
+  "name": "at-unsloop",
+  "interface": {
+    "displayName": "at-unsloop"
+  },
+  "plugins": [
+    {
+      "name": "at-unsloop",
+      "source": {
+        "source": "local",
+        "path": "./plugins/at-unsloop"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
