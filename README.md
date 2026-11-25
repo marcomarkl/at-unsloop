@@ -17,16 +17,22 @@ Diese Datei ist für Menschen gedacht. Das Modell lädt nur `SKILL.md` und bei B
 
 ## Installation
 
-In Claude Code genügt ein Symlink in den persönlichen Skill-Ordner:
+Zuerst das Repository klonen:
 
 ```bash
-ln -s /Users/marcomarkl/Documents/Claude/at-unsloop ~/.claude/skills/at-unsloop
+git clone https://github.com/marcomarkl/at-unsloop.git
 ```
 
-Für die Claude-App und für ChatGPT wird der Ordner als ZIP hochgeladen. Das Archiv enthält den Ordner `at-unsloop` mit `SKILL.md` auf oberster Ebene, die Tests werden nicht gebraucht:
+In Claude Code genügt dann ein Symlink in den persönlichen Skill-Ordner, aufgerufen im Ordner, in den geklont wurde:
 
 ```bash
-cd /Users/marcomarkl/Documents/Claude && zip -r at-unsloop.zip at-unsloop -x 'at-unsloop/tests/*' 'at-unsloop/*/__pycache__/*' 'at-unsloop/.*' 'at-unsloop/CLAUDE.md'
+ln -s "$PWD/at-unsloop" ~/.claude/skills/at-unsloop
+```
+
+Für die Claude-App und für ChatGPT wird der Ordner als ZIP hochgeladen. Das Archiv enthält den Ordner `at-unsloop` mit `SKILL.md` auf oberster Ebene. Tests und Entwicklerdateien werden nicht gebraucht:
+
+```bash
+zip -r at-unsloop.zip at-unsloop -x 'at-unsloop/tests/*' 'at-unsloop/*/__pycache__/*' 'at-unsloop/.*' 'at-unsloop/CLAUDE.md'
 ```
 
 Das ZIP lädst du in den Einstellungen der jeweiligen App im Bereich für Skills hoch. Damit das Prüfskript läuft, muss dort die Code-Ausführung aktiv sein. Ohne sie wirkt der Skill trotzdem, das Modell prüft dann von Hand. In Codex kommt der Ordner in dessen Skill-Verzeichnis, den genauen Ort nennt die Codex-Dokumentation.
@@ -59,6 +65,10 @@ Zur Selbstprüfung läuft das Skript auch über die eigenen Dateien. Es darf dab
 ```bash
 python3 scripts/pruefen.py SKILL.md README.md CLAUDE.md references/*.md
 ```
+
+## Lizenz
+
+MIT, siehe `LICENSE`.
 
 ## Stand
 
