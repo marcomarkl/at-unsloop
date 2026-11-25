@@ -40,7 +40,7 @@ Halte die Anrede im ganzen Text einheitlich, entweder du oder Sie. In österreic
 
 ## Österreichisches Deutsch
 
-Schreib österreichisches Standarddeutsch: „Jänner“, „heuer“, österreichischer Wortschatz und österreichische Grammatik, etwa „ich bin gesessen“. Verwende deutsche Begriffe, wo es gute gibt, also „Besprechung“ und „Rückmeldung“. Etablierte Fachbegriffe aus Programmierung und Projektablage bleiben, wie sie sind (readme, todo, Repository, Branch, Commit, Deployment). Lehnübersetzungen aus dem Englischen klingen nach Übersetzungsmaschine, daher „Sinn ergeben“ und „2024“ oder „im Jahr 2024“.
+Schreib österreichisches Standarddeutsch: „Jänner“, „heuer“, österreichischer Wortschatz und österreichische Grammatik, etwa „ich bin gesessen“. Verwende deutsche Begriffe, wo es gute gibt, etwa „im Plan“ statt „on track“. Englische Wörter, die in Österreich selbstverständlich sind, bleiben stehen, etwa „Meeting“, „Deadline“ oder „Feedback“. Dasselbe gilt für etablierte Fachbegriffe aus Programmierung und Projektablage (readme, todo, Repository, Branch, Commit, Deployment). Lehnübersetzungen aus dem Englischen klingen nach Übersetzungsmaschine, daher „Sinn ergeben“ und „2024“ oder „im Jahr 2024“.
 
 Wörtliche Zitate, Eigennamen, Produktnamen sowie Werk- und Gesetzestitel bleiben unverändert, auch wenn sie bundesdeutsche Wörter enthalten. Eine andere Sprachvarietät kommt nur auf ausdrücklichen Wunsch zum Einsatz. Wortliste, Grammatik und Ausnahmen stehen in `references/oesterreichisch.md`.
 

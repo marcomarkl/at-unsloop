@@ -40,9 +40,9 @@ Vorher:
 
 Nachher:
 
-> Hallo zusammen, das Projekt liegt im Plan. Am Donnerstag um 10 Uhr starten wir in der Besprechung die zweite Phase. Fragen gern vorher an mich.
+> Hallo zusammen, das Projekt liegt im Plan. Am Donnerstag um 10 Uhr starten wir im Meeting die zweite Phase. Fragen gern vorher an mich.
 
-Warum besser: Eine kurze Nachricht braucht keine Liste mit fetten Schlagwörtern und keine Emojis. Deutsche Begriffe ersetzen „Update“, „on track“ und „Meeting“, und „starten“ ersetzt das ausweichende „dient als“.
+Warum besser: Eine kurze Nachricht braucht keine Liste mit fetten Schlagwörtern und keine Emojis. „Im Plan“ ersetzt das englische „on track“, und „starten“ ersetzt das ausweichende „dient als“. „Meeting“ bleibt, weil das Wort in Österreich geläufig ist.
 
 ## Artikelabsatz mit aufgeblähter Bedeutung
 

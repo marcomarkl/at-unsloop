@@ -25,11 +25,6 @@ Zeilen mit „nein“ sind Fälle, in denen beide Formen in Österreich üblich 
 | Mülleimer | Mistkübel | ja | |
 | Klempner | Installateur | ja | |
 | Sonnabend | Samstag | ja | |
-| Meeting | Besprechung | ja | Termin oder Sitzung, je nach Art |
-| Deadline | Frist / Termin | ja | |
-| Feedback | Rückmeldung | ja | |
-| Insights | Erkenntnisse | ja | |
-| Challenge | Herausforderung / Aufgabe | ja | |
 | performen / performt / performte | leisten / abschneiden | ja | |
 | macht Sinn / Sinn machen / Sinn gemacht | ergibt Sinn / ist sinnvoll | ja | Lehnübersetzung |
 | am Ende des Tages | letztlich / schließlich | ja | Lehnübersetzung |
@@ -44,8 +39,6 @@ Zeilen mit „nein“ sind Fälle, in denen beide Formen in Österreich üblich 
 | Kasse | Kassa | nein | beides üblich |
 | Junge | Bub | nein | vom Zusammenhang abhängig |
 | Pfannkuchen | Palatschinke | nein | nicht deckungsgleich |
-| Update | Zwischenstand / Aktualisierung | nein | Software-Update bleibt |
-| Call | Telefonat / Videotermin | nein | vom Zusammenhang abhängig |
 | die E-Mail | das E-Mail | nein | beides korrekt, „das E-Mail“ ist österreichisch |
 | nicht wirklich | kaum / eigentlich nicht | nein | Lehnübersetzung, umgangssprachlich üblich |
 <!-- pruefen:an -->
@@ -62,9 +55,11 @@ Viele Zusammensetzungen haben ein Fugen-s, etwa „Zugsverspätung“, „Schwei
 
 Uhrzeiten und Daten folgen dem österreichischen Gebrauch: „am 3. Jänner“, „um halb drei“, „in der Früh“.
 
-## Fachbegriffe, die bleiben
+## Englische Wörter, die bleiben
 
-Etablierte Begriffe aus Programmierung und Projektablage werden nicht eingedeutscht: readme, todo, Repository, Branch, Commit, Pull-Request, Merge, Build, Release, Deployment, Bug, Issue, Backlog, Sprint, Frontend, Backend, API, Framework, Tool, Server, Log.
+Englische Wörter, die im österreichischen Arbeitsalltag selbstverständlich sind, werden nicht eingedeutscht: Meeting, Call, Update, Deadline, Feedback, Insights, Challenge.
+
+Ebenso bleiben etablierte Begriffe aus Programmierung und Projektablage: readme, todo, Repository, Branch, Commit, Pull-Request, Merge, Build, Release, Deployment, Bug, Issue, Backlog, Sprint, Frontend, Backend, API, Framework, Tool, Server, Log.
 
 ## Was unverändert bleibt
 
