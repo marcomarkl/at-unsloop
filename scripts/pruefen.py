@@ -472,7 +472,9 @@ def main(argv: list[str] | None = None) -> int:
             strom.reconfigure(encoding="utf-8")
 
     parser = argparse.ArgumentParser(description="Prüft deutsche Texte auf maschinell wirkende Muster.")
-    parser.add_argument("dateien", nargs="+", help="Dateien (Klartext oder Markdown) oder - für die Standardeingabe")
+    # nargs="*", damit --regeln ohne Datei funktioniert. Für die Prüfung selbst
+    # wird unten mindestens eine Datei verlangt.
+    parser.add_argument("dateien", nargs="*", help="Dateien (Klartext oder Markdown) oder - für die Standardeingabe")
     parser.add_argument("--json", action="store_true", help="Treffer als JSON ausgeben")
     parser.add_argument("--ignoriere-regel", action="append", default=[], metavar="REGEL",
                         help="Regel überspringen, mehrfach möglich")
@@ -485,6 +487,9 @@ def main(argv: list[str] | None = None) -> int:
         for name, text in REGELN.items():
             print(f"{name}: {text}")
         return 0
+
+    if not args.dateien:
+        parser.error("mindestens eine Datei oder - für die Standardeingabe angeben")
 
     unbekannt = [r for r in args.ignoriere_regel if r not in REGELN]
     if unbekannt:

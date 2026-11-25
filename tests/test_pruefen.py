@@ -187,6 +187,14 @@ class Kommandozeile(unittest.TestCase):
         self.assertEqual(ergebnis.returncode, 1)
         self.assertIn("wortliste", ergebnis.stdout.decode("utf-8"))
 
+    def test_regeln_ohne_datei(self):
+        ergebnis = self.lauf("--regeln")
+        self.assertEqual(ergebnis.returncode, 0)
+        self.assertIn("gedankenstrich:", ergebnis.stdout.decode("utf-8"))
+
+    def test_pruefung_ohne_datei(self):
+        self.assertEqual(self.lauf().returncode, 2)
+
     def test_unbekannte_regel(self):
         self.assertEqual(self.lauf("--ignoriere-regel", "gibtsnicht", "-", eingabe="x").returncode, 2)
 
